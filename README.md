@@ -1,19 +1,35 @@
-# Product Category Classifier
+Product Category Classifier
 
-Machine learning model for automatic product categorization based on product titles.
+Ovaj projekat služi za automatsku klasifikaciju proizvoda na osnovu naslova proizvoda koristeći mašinsko učenje.
 
-## Dataset
+Struktura projekta
+.
+├── data/
+│   └── products.csv
+├── models/
+│   ├── model.pkl
+│   └── vectorizer.pkl
+├── notebooks/
+│   └── analysis.ipynb
+├── train_model.py
+├── predict_category.py
+├── requirements.txt
+└── README.md
+Instalacija
 
-products.csv
+Kloniraj repozitorij i instaliraj zavisnosti:
 
-## Installation
-
+git clone https://github.com/SandraVorkapic/product-category-classifier.git
+cd product-category-classifier
 pip install -r requirements.txt
-
-## Train model
-
+Korišćenje
+Treniranje modela
 python train_model.py
-
-## Predict category
-
+Predviđanje kategorije proizvoda
 python predict_category.py
+
+Program traži unos naslova proizvoda i vraća predviđenu kategoriju.
+
+Analiza podataka
+
+Notebook notebooks/analysis.ipynb sadrži analizu skupa podataka i pripremu za treniranje modela.
